@@ -17,9 +17,6 @@ ISP1_ip="xxx.xxx.xxx.xxx"
 ISP2_ip="yyy.yyy.yyy.yyy"
 
 if [ "x$current_isp" = "xisp1" ]; then
-    #echo ${serial_new};
-    #killall named
-
     cat ${vars_xml_templ} | sed "s/_iptempl_/${ISP1_ip}/" >${vars_xml};
     cat ${external_xml_templ} | sed "s/_iptempl_/${ISP1_ip}/" >${external_xml};
     cat ${sip_nginx_templ} | sed "s/_iptempl_/${ISP1_ip}/" >${sip_nginx};
@@ -28,8 +25,6 @@ if [ "x$current_isp" = "xisp1" ]; then
     echo ${cur_date}" BBB configs have been updated to ISP1 ext IP!" >> /var/log/bbb_config_update.log;
 else
     if [ "x$current_isp" = "xisp2" ]; then
-    #echo ${serial_new};
-    #killall named
     cat ${vars_xml_templ} | sed "s/_iptempl_/${ISP2_ip}/" >${vars_xml};
     cat ${external_xml_templ} | sed "s/_iptempl_/${ISP2_ip}/" >${external_xml};
     cat ${sip_nginx_templ} | sed "s/_iptempl_/${ISP2_ip}/" >${sip_nginx};
