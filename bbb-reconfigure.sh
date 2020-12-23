@@ -12,7 +12,7 @@ default_yml_templ="/usr/scripts/bbb/default.yml.templ"
 default_yml="/usr/local/bigbluebutton/bbb-webrtc-sfu/config/default.yml"
 default_bbb_sip_templ="/usr/scripts/bbb/bigbluebutton-sip.properties.templ"
 default_bbb_sip="/usr/share/red5/webapps/sip/WEB-INF/bigbluebutton-sip.properties"
-cur_date=`date --date="+5 minutes" --rfc-3339=seconds`
+cur_date=`date --rfc-3339=seconds`
 ISP1_ip="xxx.xxx.xxx.xxx"
 ISP2_ip="yyy.yyy.yyy.yyy"
 
