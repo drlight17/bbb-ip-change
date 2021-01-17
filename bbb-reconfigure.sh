@@ -1,5 +1,5 @@
 #!/bin/sh
-# drlight 17.12.2020 Script to change config of BBB with new ip address depend on current ISP
+# drlight 17.12.2020 Script to change config of BBB with new ip address depend on current ISP from simple text file /usr/scripts/ch-gateway/current
 
 current_isp=`cat /usr/scripts/ch-gateway/current`
 vars_xml_templ="/usr/scripts/bbb/vars.xml.templ"
